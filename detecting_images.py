@@ -1,7 +1,7 @@
 import torch
 from PIL import Image
 
-def parse_args()
+def parse_args():
 
 	parser = argparse.ArgumentParser(description="Detect objects on images.")
 	parser.add_argument("-i", "--images_dir", type=str, default="./img_examples", help="Path to directory with images to inference")
@@ -11,7 +11,7 @@ def parse_args()
 
 	return args
 
-def detect(args)
+def detect(args):
 
 	# Model
 	model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
