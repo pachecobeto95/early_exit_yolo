@@ -1,4 +1,4 @@
-import torch
+import torch, argparse
 from PIL import Image
 
 def parse_args():
