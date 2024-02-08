@@ -14,7 +14,7 @@ def parse_args():
 def detect(args):
 
 	# Model
-	model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
+	model = torch.hub.load('ultralytics/yolov5', 'yolov5s', force_reload=True)
 
 	img_list = []
 
